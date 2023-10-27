@@ -40,5 +40,7 @@ class AppViewModel : ViewModel(){
     fun setJenisK(pilihJK: String){
         _uiState.update { currentState -> currentState.copy(sex = pilihJK) }
     }
-
+    fun setsts(pilihsts: String){
+        _uiState.update { currentState -> currentState.copy(statuspn = pilihsts) }
+    }
 }
