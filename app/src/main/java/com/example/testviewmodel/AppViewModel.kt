@@ -9,6 +9,7 @@ import com.example.testviewmodel.Data.Dataform
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
 
 class AppViewModel : ViewModel(){
     var usrName:String by mutableStateOf("")
@@ -36,5 +37,8 @@ class AppViewModel : ViewModel(){
         alamat = almt;
     }
 
+    fun setJenisK(pilihJK: String){
+        _uiState.update { currentState -> currentState.copy(sex = pilihJK) }
+    }
 
 }
