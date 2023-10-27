@@ -1,5 +1,6 @@
 package com.example.testviewmodel
 
+import android.provider.ContactsContract.CommonDataKinds.Email
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -25,4 +26,15 @@ class AppViewModel : ViewModel(){
 
     private val _uiState = MutableStateFlow(Dataform())
     val uiState: StateFlow<Dataform> = _uiState.asStateFlow()
+
+    fun insertData(unm: String, tlp: String, mail: String, jkel: String, sts: String, almt: String){
+        usrName = unm;
+        telphone = tlp;
+        email = mail;
+        jk = jkel;
+        statuspn = sts;
+        alamat = almt;
+    }
+
+
 }
