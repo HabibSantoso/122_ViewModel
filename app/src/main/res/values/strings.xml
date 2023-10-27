@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">testViewmodel</string>
+    <string name="app_name">Viewmodel</string>
+    <string name="regis">Register</string>
+    <string name="create">Create Your Account</string>
+    <string name="Usern">Username</string>
+    <string name="telp">Telphone</string>
+    <string name="email">Email</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="status">Status</string>
+    <string name="unmerried">Belum Menikah</string>
+    <string name="merried">Menikah</string>
+    <string name="alamat">Alamat</string>
 </resources>
